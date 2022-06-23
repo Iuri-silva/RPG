@@ -1,10 +1,17 @@
-public class bau{
+public class bau extends tesouro{
   public int multiplicador;
+  private String tamanho;
 
+      public bau(String tipo,float valor, int multiplicador, String tamanho) {
+        super(tipo,valor);
+        this.multiplicador = multiplicador;
+        this.tamanho = tamanho;
+    }
+  
   public  float calcularQuantia(){
-    float calculo;
-    
-    return calculo = 1.4f;
+    float valorTotal;
+    valorTotal = this.valor * this.multiplicador;
+    return valorTotal;
   }
 
     public int getMultiplicador() {

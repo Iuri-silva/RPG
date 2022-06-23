@@ -3,6 +3,7 @@ public class jogador{
   private String raça;
   private castelo castelo;
   private arma arma;
+  
 
     public jogador(String nome, String raça, castelo castelo, arma arma) {
         this.nome = nome;

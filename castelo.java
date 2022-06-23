@@ -8,11 +8,9 @@ public class castelo{
     }
   
 
-  public boolean receberAtaque(int x){
-    boolean recebeuAtk;
-         
-    vida = vida - x;
-    return recebeuAtk = true;
+  public void receberAtaque(int x){
+    this.vida = this.vida - (x - this.poderDeDefesa);
+    System.out.println("Vida Atual: "+this.vida);
   }
 
     public int getPoderDeDefesa() {

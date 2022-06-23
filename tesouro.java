@@ -1,12 +1,12 @@
 abstract class tesouro{
   private String tipo;
-  private float valor;
+  protected float valor;
 
     public tesouro(String tipo, float valor) {
         this.tipo = tipo;
         this.valor = valor;
     }
-
+  
   public abstract float calcularQuantia();
 
     public String getTipo() {
